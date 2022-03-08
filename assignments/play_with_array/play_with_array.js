@@ -7,11 +7,7 @@ function getEven(arr) {
 
         Write you code below
     */
-   count=arr.filter(num=>{
-       return num%2===0;
-
-   })
-   return count
+   
 
 }
 
