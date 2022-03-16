@@ -7,17 +7,23 @@ function getEven(arr) {
 
         Write you code below
     */
+   
 
 }
 
 function multiplyByN(arr, n) {
+
     /* 
         Return an array whose elements are multiplied by n
         Example
             Input: [1,3,4,55], 3
             Output: [3,9,13,165]
-        Write you code below
-    */
+        Write you code below*/
+    for (i=0; i<arr.length; i++){
+        let multi= arr[i]*n
+        arr[i] = multi
+    }
+    return arr;
 }
 
 function removeNthElement(arr, n) {
@@ -28,6 +34,12 @@ function removeNthElement(arr, n) {
             Output: [1,3,4,7]
         Write you code below
     */
+   for(i=0; i<arr.length; i++){
+       if (i==n){
+           arr.splice(n,1)
+       }
+   }
+   return arr;
 }
 
 module.exports = {
